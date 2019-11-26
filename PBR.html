@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Some Web Page</title>
+    </head>
+    <body>
+        <h1 >PASS BY REFERENCE</h1>  </body></br>
+        <button onclick="reference()">passByReference</button>
+         <h2><p id="p1"></p></h2> 
+        
+
+        <script>
+              function turnOn(machine) {
+               machine.isOn = true;
+                 }
+ 
+            var computer = {
+                    isOn: false
+                       };
+             function reference()
+             {
+                    turnOn(computer);
+                   console.log(computer.isOn);
+                   document.getElementById("p1").innerHTML= computer.isOn;
+             }
+						
+        </script>
+     
+    </body>
+
+    </html>
