@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Some Web Page</title>
+    </head>
+    <body>
+        <h1 >PASS BY VALUE</h1>  </body></br>
+        <button onclick="sq()">passByValue</button>
+         <h2><p id="p1"></p></h2> 
+        
+
+        <script>
+              function square(x) {
+                              x = x * x;
+                            }
+			    function sq()
+			          {
+                        var y = 10;
+                       square(y);
+                        console.log(y);
+						document.getElementById("p1").innerHTML= y;
+						}
+						
+        </script>
+     
+    </body>
+
+    </html>
