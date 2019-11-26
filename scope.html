@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Some Web Page</title>
+    </head>
+    <body>
+        <h1 >SCOPE</h1>  </body></br>
+        <button onclick="scope()">SCOPE</button>
+         <h2><p id="p1"></p></h2> 
+         <h2><p id="p2"></p></h2> 
+        
+
+        <script>
+                  // Initialize a global variable
+                  var species = "human";
+
+function transform() {
+     // Initialize a local, function-scoped variable
+     var species = "werewolf";
+         console.log(species);
+         document.getElementById("p1").innerHTML= "local variable"+ " " + species;
+           }
+      function scope()
+      {
+      // Log the global and local variable
+         console.log(species);
+         
+              transform();
+            console.log(species);
+            
+        document.getElementById("p2").innerHTML= "global variable" + " "+ species;
+      }
+
+
+        </script>
+     
+    </body>
+
+    </html>
